@@ -1,6 +1,7 @@
 package com.whatsfordinner.whatsfordinner;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentTransaction;
@@ -18,15 +19,19 @@ public class RecipesActivity extends FragmentActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipes);
 
+        Configuration config = getResources().getConfiguration();
         recipeListFragment = new RecipeListFragment();
         recipeDetailFragment = new RecipeDetailFragment();
 
         FragmentTransaction transaction =
                 getSupportFragmentManager().beginTransaction();
-
         transaction.add(R.id.recipe_list_fragment, recipeListFragment);
-        transaction.add(R.id.recipe_detail_fragment, recipeDetailFragment);
-
+        if(config.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            transaction.add(R.id.recipe_detail_fragment, recipeDetailFragment);
+        } else {
+            transaction.remove(recipeDetailFragment);
+//            transaction.add(R.id.recipe_list_fragment, recipeListFragment);
+        }
         transaction.commit();
     }
 
