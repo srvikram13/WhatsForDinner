@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Whats For Dinner</string>
+    <string name="meals">Meals</string>
+    <string name="groceries">Groceries</string>
+    <string name="recipes">Recipes</string>
+    <string name="new_dish">New Dish</string>
+    <string name="link"><a href='#'>Help page</a></string>
+    <string name="copyright"><![CDATA[ © All rights reserved 2016]]></string>
+    <string name="author">Vikram Deshmukh</string>
+    <string name="ingredients">Ingredients</string>
+    <string name="enter_ingredient">Enter Ingredient</string>
+    <string name="enter_recipe_name">Enter Recipe Name</string>
+    <string name="directions">Directions</string>
+    <string name="enter_recipe_directions">Enter Recipe Directions</string>
+    <string name="grocery_item_empty">No grocery items added.</string>
+    <string name="add_more">Add More</string>
+    <string name="save_dish">Save Dish</string>
+    <string name="monday">Monday</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="sunday">Sunday</string>
+    <string name="add_image">Add Image</string>
+
+    <string-array name="spinnerItems">
+        <item>Pieces(pcs)</item>
+        <item>Pounds(lbs)</item>
+        <item>Ounces(oz)</item>
+        <item>Litres(L)</item>
+        <item>Dozens(Dz)</item>
+        <item>Grams(g)</item>
+    </string-array>
+</resources>

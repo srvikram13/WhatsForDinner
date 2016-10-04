@@ -1,0 +1,133 @@
+package com.whatsfordinner.whatsfordinner;
+
+import android.content.Context;
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.Spinner;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class NewDishActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_new_dish);
+
+        // Get reference of widgets from XML activity_new_dish
+        final Button btn = (Button) findViewById(R.id.btn);
+        final Button btnSave = (Button) findViewById(R.id.btn_save_dish);
+        final LinearLayout llIngredientsContainer = (LinearLayout) findViewById(R.id.ingredient_container);
+
+        // Construct the data source
+        final ArrayList<Ingredient> arrayOfIngredient = new ArrayList<Ingredient>();
+        arrayOfIngredient.add(new Ingredient("Tomato", 1, "Pounds(lbs)"));
+        arrayOfIngredient.add(new Ingredient("Potatoes", 2, "Pounds(lbs)"));
+        arrayOfIngredient.add(new Ingredient("Bell Peppers", 3, "Pieces(pcs)"));
+
+        View myView = View.inflate(llIngredientsContainer.getContext(), R.layout.list_item, null);
+        // Create the adapter to convert the array to views
+        //final ListAdapter adapter = new ListAdapter(this, arrayOfIngredient);
+
+        /*View view = inflater.inflate(R.layout.some_view, parent);
+        ((TextView) view.findViewById(R.id.some_text)).setText(someString);
+        */
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Add new Items to List
+            arrayOfIngredient.add(new Ingredient("Chicken", 1, "Pounds(lbs)"));
+                /*
+                    notifyDataSetChanged ()
+                        Notifies the attached observers that the underlying
+                        data has been changed and any View reflecting the
+                        data set should refresh itself.
+                 */
+        //        adapter.notifyDataSetChanged();
+            }
+        });
+    }
+
+
+    /*private class ListAdapter extends ArrayAdapter<Ingredient> {
+
+        public ListAdapter(Context context, ArrayList<Ingredient> users) {
+            super(context, 0, users);
+
+        }
+
+
+        @Override
+
+        public View getView(int position, View convertView, ViewGroup parent) {
+
+            // Get the data item for this position
+            Ingredient ingredient = getItem(position);
+
+            // Check if an existing view is being reused, otherwise inflate the view
+            if (convertView == null) {
+
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+
+            }
+
+            // Lookup view for data population
+            EditText etName = (EditText) convertView.findViewById(R.id.name);
+            EditText etQty = (EditText) convertView.findViewById(R.id.quantity);
+
+            // Spinner element
+            Spinner spinner = (Spinner) convertView.findViewById(R.id.spinner);
+
+            // Spinner click listener
+            spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                @Override
+                public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
+                }
+
+                @Override
+                public void onNothingSelected(AdapterView<?> adapterView) {
+
+                }
+            });
+
+            // Spinner Drop down elements
+            List<String> categories = new ArrayList<String>();
+            categories.add("Pieces(pcs)");
+            categories.add("Pounds(lbs)");
+            categories.add("Ounces(oz)");
+            categories.add("Litres(L)");
+            categories.add("Dozens(Dz)");
+            categories.add("Grams(g)");
+
+            // Creating adapter for spinner
+            ArrayAdapter<String> dataAdapter = new ArrayAdapter<>(getContext(), android.R.layout.simple_spinner_item, categories);
+
+            // Drop down activity_new_dish style - list view with radio button
+            dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+
+            // attaching data adapter to spinner
+            spinner.setAdapter(dataAdapter);
+
+            // Populate the data into the template view using the data object
+            etName.setText(ingredient.getName());
+            etQty.setText(Float.toString(ingredient.getQuantity()));
+            spinner.setSelection(dataAdapter.getPosition(ingredient.getUnit()));
+
+            // Return the completed view to render on screen
+            return convertView;
+
+        }
+
+    }*/
+}

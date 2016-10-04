@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_columnSpan="5"
+        android:layout_marginBottom="20dp"
+        android:layout_row="0"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Meal Planner"
+        android:textAlignment="center"
+        android:textSize="26sp" />
+
+    <TextView
+        style="@style/h3"
+        android:layout_column="1"
+        android:layout_row="1"
+        android:text="Day"
+        android:textAlignment="viewEnd" />
+
+    <TextView
+        style="@style/h3"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:text="Breakfast"
+        android:textAlignment="center" />
+
+    <TextView
+        style="@style/h3"
+        android:layout_column="3"
+        android:layout_row="1"
+        android:text="Lunch"
+        android:textAlignment="center" />
+
+    <TextView
+        style="@style/h3"
+        android:layout_column="4"
+        android:layout_row="1"
+        android:text="Dinner"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_column="1"
+        android:layout_row="2"
+        android:text="@string/monday"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_column="2"
+        android:layout_row="2"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="3"
+        android:layout_row="2"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="4"
+        android:layout_row="2"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:layout_column="1"
+        android:layout_row="3"
+        android:text="@string/tuesday"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_column="2"
+        android:layout_row="3"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="3"
+        android:layout_row="3"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="4"
+        android:layout_row="3"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_column="1"
+        android:layout_row="4"
+        android:text="@string/wednesday"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_column="2"
+        android:layout_row="4"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="3"
+        android:layout_row="4"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="4"
+        android:layout_row="4"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_column="1"
+        android:layout_row="5"
+        android:text="@string/thursday"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_column="2"
+        android:layout_row="5"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="3"
+        android:layout_row="5"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="4"
+        android:layout_row="5"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:layout_column="1"
+        android:layout_row="6"
+        android:text="@string/thursday"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_column="2"
+        android:layout_row="6"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="3"
+        android:layout_row="6"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="4"
+        android:layout_row="6"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_column="1"
+        android:layout_row="7"
+        android:text="@string/friday"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_column="2"
+        android:layout_row="7"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="3"
+        android:layout_row="7"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="4"
+        android:layout_row="7"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_column="1"
+        android:layout_row="8"
+        android:text="@string/saturday"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_column="2"
+        android:layout_row="8"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="3"
+        android:layout_row="8"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="4"
+        android:layout_row="8"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_column="1"
+        android:layout_row="9"
+        android:text="@string/sunday"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_column="2"
+        android:layout_row="9"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="3"
+        android:layout_row="9"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_column="4"
+        android:layout_row="9"
+        android:text="Add Meal"
+        android:textSize="12sp" />
+
+</GridLayout>
+
